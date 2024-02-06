@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-background"></div>
+    <h1>Inventory Management<br> System</h1>
+  <div class="container">
+     <form class="login-form" action="login.php" method="post">
+      <h2>Log in to start your session</h2>
+      <div class="input-container">
+        <input type="text" name="email" placeholder="Email">
+        <img src="https://cdn-icons-png.flaticon.com/512/4946/4946005.png" alt="Mail Icon">
+      </div>
+      <div class="input-container">
+        <input type="password" name="password" placeholder="Password">
+        <img src="https://www.vhv.rs/dpng/d/289-2894922_lock-icon-png-transparent-png.png" alt="Lock Icon">
+      </div>
+      <div class="remember-me">
+        <input type="checkbox" id="remember">
+        <label for="remember">Remember Me</label>
+      </div>
+      <button type="submit">Log In</button>
+    </form>
+  </div>
+
+
+  <script>
+    // Disable zooming on the page
+    function disableZoom() {
+      document.addEventListener('keydown', function (event) {
+        if (event.ctrlKey === true || event.metaKey) {
+          event.preventDefault();
+        }
+      }, false);
+
+      window.addEventListener('wheel', function (event) {
+        if (event.ctrlKey === true || event.metaKey) {
+          event.preventDefault();
+        }
+      }, { passive: false });
+
+      document.addEventListener('gesturestart', function (e) {
+        e.preventDefault();
+      });
+    }
+
+    // function to disable zooming
+    disableZoom();
+  </script>
+
+</body>
+</html>

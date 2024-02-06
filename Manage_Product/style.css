@@ -1,0 +1,326 @@
+/* Styles for the Manage Product background */
+body {
+    background-color: #fafafa; 
+  }
+  
+  /* Basic styles for the header */
+  .header {
+      background-color: #F9583E;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px;
+      margin-top: -10px;
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+    
+  
+      /* Basic styles for the sidebar and menu items */
+  .sidebar {
+    background-color: #252525;
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: -8px;
+    max-height: 400vh;
+    transform: translateY(98px); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    
+    }
+  
+  .menu {
+  list-style-type: none;
+  padding: -80px;
+  margin: -10px;
+  position: relative;
+  }
+  
+  .menu li {
+  margin-bottom: 40px;
+  }
+  
+  .menu a {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 25px;
+  color: #FEFEFE;
+  text-decoration: none;
+  margin-left: -5px;
+  transition: background-color 0.3s ease;
+  }
+  
+  .menu img {
+  width: 25px;
+  height: 20px;
+  margin-right: 20px;
+  filter: invert(100%);
+  margin-left: -30px;
+  transition: transform 0.3s ease;
+  }
+  
+  /* Styles for the submenus */
+  .sub-menu {
+  display: none;
+  }
+  
+  .submenu:hover .sub-menu {
+  display:list-item;
+  }
+  
+  .submenu .sub-menu a {
+  font-size: 20px; 
+  margin-left: -10px;
+  }
+  
+  .submenu li {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 14px;
+  margin-bottom: -10px;
+  transition: background-color 0.3s ease;
+  }
+  
+  .submenu > li:hover {
+  background-color: orange;
+  }
+  
+  .menu .icon img {
+  width: 20px;
+  height: 20px;;
+  margin-left: -60px;
+  }
+  
+  /* Add zoom-in animation on hover for menu items and images */
+  .menu li:hover,
+  .menu img:hover {
+  transform: scale(1.1); 
+  }
+  
+  /* Add orange background on hover for menu items and images */
+  .menu li a:hover,
+  .menu img:hover {
+  background-color: rgb(255, 119, 0);
+  }
+  
+  /* Adding KUMARA STORES LOGO */
+  .logo {
+  position: absolute;
+  top: 5%; 
+  left: 70px; 
+  transform: translateY(-50%); 
+  }
+  
+  .logo img {
+  width: 90px; 
+  height: 75px;
+  }
+  
+  /* Styles for the dashboard texts */
+  .content {
+  margin-left: 300px;
+  padding: 20px;
+  }
+  
+  .texts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end; 
+  margin-bottom: 20px; 
+  margin-right: 50px;
+  }
+  
+  .manage-products-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #5A5A5A;
+  margin-right: 1110px; 
+  white-space: nowrap;
+  }
+  
+  .breadcrumb-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 20px;
+  font-weight: regular;
+  color: #5A5A5A;
+  margin-right: 40px;
+  white-space: nowrap;
+  }
+  
+  /* Styles for the dropdown icon */
+.dropdown-icon {
+    font-size: 18px;
+    margin-left: 5px;
+    color: #FFFFFF;
+  }
+  
+  /* Styles for the Add Category button */
+  .add-product-button {
+  background-color: #1CB3F3;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 40px;
+  }
+  
+  .button-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  }
+  
+  /* Styles for the Print button */
+  .print-button {
+  background-color: #8e8a8a;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 40px;
+  }
+  
+  .button-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  }
+  
+  /* Styles for the Search text box */
+  .search-box {
+  display: flex;
+  align-items: center;
+  margin-top: -30px;
+  margin-left: 1220px;
+  }
+  
+  .search-box input[type="text"] {
+  padding: 8px;
+  padding-right: 80px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 14px;
+  color: #5A5A5A;
+  width: 200px;
+  }
+
+
+ /* Styles for the table */
+ .product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    transform: translateY(40px);
+  }
+  
+  .product-table th{
+    padding: 10px;
+    text-align: left;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background-color: #a7e5ff;
+    border: 1px solid #ccc;
+  }
+  
+  .product-table td {
+    padding: 10px;
+    text-align: left;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    border: 1px solid #ccc;
+  }
+
+  /* Set alternating row colors */
+tr:nth-child(even) {
+    background-color: white;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #f4f4f4;
+  }
+  
+  /* Add styles for the status button */
+  .status-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .status-button.active {
+    background-color: #4CAF50; 
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .status-button.inactive {
+    background-color: #FFAA00; 
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Styles for the "Status" column */
+  .availability-column {
+    width: 400px; 
+  }
+  
+  /* Styles for the buttons in the Action column */
+  .edit-button, .delete-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .button-icon {
+    width: 25px;
+    height: 25px;
+    filter: invert(1);
+  }
+  
+  .edit-button {
+    background-color: #FFAA00;
+  }
+  
+  .delete-button {
+    background-color: #F53434;
+  }
+  
+  /* Style for the image circle */
+.image-circle {
+  width: 50px; 
+    height: 50px;
+    border-radius: 50%; 
+    overflow: hidden; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for the image inside the circle */
+.image-circle img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+

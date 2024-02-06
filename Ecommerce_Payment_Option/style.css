@@ -1,0 +1,181 @@
+/* Styles for the dashboard background */
+body {
+    background-color: #fafafa; 
+  }
+  
+  /* Basic styles for the header and cart icon */
+  .header {
+      background-color: #F76707;
+      align-items: center;
+      justify-content: space-between;
+      padding: 100px;
+      margin-top: -10px;
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+
+
+/* Adding KUMARA STORES LOGO */
+.logo {
+    position: absolute;
+    top: 10%; 
+    left: 48%; 
+    transform: translateY(-50%); 
+  }
+  
+  .logo img {
+    width: 130px; 
+    height: 130px;
+  }
+
+
+/* Styles for the colored rectangle */
+.footer {
+    background-color: #069A55;
+    height: 230px; 
+    width: 100%; 
+    margin-top: 4%;
+}
+
+
+.footer-heading {
+    font-family: 'cooper', sans-serif;
+    font-size: 45px;
+    text-align:center;
+    margin-bottom: -20px;
+    color:#f4c0c0
+}
+  
+  .footer-address {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 25px;
+    margin-bottom: -40px;
+    text-align:center;
+    color:#8fa8f1
+  }
+
+
+/* Styles for the Contact and Follow Us Sections */
+.contact-section {
+    background-color: #069A55;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  }
+  
+  .contact h3,
+  .follow-us h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  .contact p {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.925);
+  }
+  
+  .follow-us img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+
+
+
+
+.slider-container {
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    margin-top: 2%;
+    height: 1200px;
+}
+
+.slider-image {
+    display: none;
+    width: 100%;
+    height: 30%
+}
+
+.slider-image img {
+    width: 100%;
+    height: 100%; 
+    object-fit:fill;
+    
+}
+
+
+
+
+
+
+/* Style for Online Payment Option */
+.payment-option {
+    margin-top: -40%;
+    text-align: center;
+}
+
+.payment-heading {
+    font-size: 80px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: underline;
+}
+
+.payment-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.payment-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product-image {
+    max-width: 800px;
+    max-height: 600px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+
+.pay-here-button {
+    background-color: blue;
+    color: white;
+    padding: 20px 60px;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 15%;
+}
+
+.pay-here-button:hover {
+    background-color: #ff0000; 
+  }
+
+.payment-texts {
+    text-align: center;
+}
+
+.thank-you-text {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.welcome-text {
+    font-size: 20px;
+}

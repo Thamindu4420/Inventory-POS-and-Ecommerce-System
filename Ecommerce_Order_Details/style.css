@@ -1,0 +1,267 @@
+/* Styles for the dashboard background */
+body {
+    background-color: #fafafa; 
+  }
+  
+  /* Basic styles for the header and cart icon */
+  .header {
+      background-color: #069A55;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px;
+      margin-top: -10px;
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+    
+    
+    /* Basic styles for the sidebar and menu items */
+  .sidebar {
+    background-color: #252525;
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: -8px;
+    min-height: 400vh;
+    transform: translateY(110px); 
+    position:absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    overflow-y: auto;
+    }
+    
+    .menu {
+    list-style-type: none;
+    padding: -80px;
+    margin: -10px;
+    position: relative;
+    }
+    
+    .menu li {
+    margin-bottom: 40px;
+    }
+    
+    .menu a {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 25px;
+    color: #FEFEFE;
+    text-decoration: none;
+    margin-left: -5px;
+    transition: background-color 0.3s ease;
+    }
+    
+    .menu img {
+    width: 25px;
+    height: 20px;
+    margin-right: 20px;
+    filter: invert(100%);
+    margin-left: -30px;
+    transition: transform 0.3s ease;
+    }
+    
+    .menu .icon img {
+    width: 20px;
+    height: 20px;;
+    margin-left: -60px;
+    }
+    
+    /* Add zoom-in animation on hover for menu items and images */
+    .menu li:hover,
+    .menu img:hover {
+    transform: scale(1.1); 
+    }
+    
+    /* Add orange background on hover for menu items and images */
+    .menu li a:hover,
+    .menu img:hover {
+    background-color: rgb(44, 16, 227);
+    }
+  
+  /* Adding KUMARA STORES LOGO */
+  .logo {
+    position: absolute;
+    top: 5%; 
+    left: 70px; 
+    transform: translateY(-50%); 
+  }
+  
+  .logo img {
+    width: 90px; 
+    height: 75px;
+  }
+  
+
+
+
+/* Styles for the dashboard texts */
+.content {
+    margin-left: 300px;
+    padding: 20px;
+    }
+    
+    .texts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end; 
+    margin-top: 30px;
+    margin-bottom: 20px; 
+    }
+    
+    .order-details-text {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #5A5A5A;
+    margin-right: 1130px; 
+    white-space: nowrap;
+    }
+    
+    .breadcrumb-text {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-weight: regular;
+    color: #5A5A5A;
+    margin-right: 40px;
+    white-space: nowrap;
+    }
+
+
+  .admin-panel-text {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+  }
+
+
+
+  /* Style for the horizontal line after the heading */
+.heading-line {
+    border: 1px solid #000000; 
+    margin-top: 10px; 
+  }
+
+
+/* Styles for the Print button */
+.print-button {
+    background-color: #00DCFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 18%;
+    }
+    
+    .button-text {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    }
+
+
+/* Styles for the "Customer Info" Heading */
+.customer-info-heading {
+    font-family: "Segoe UI", sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 80px; 
+    margin-bottom: 40px;
+    margin-left: 18%;
+}
+
+/* Styles for the Customer Info Form */
+.customer-info-form {
+    margin-top: 10px; 
+}
+
+/* Styles for Label and Textbox */
+.form-group {
+    margin-top: 10px; 
+    margin-left: 18%;
+}
+
+.form-group label {
+    display: block;
+    font-size: 15px; 
+    font-weight: bold;
+    font-family: "Segoe UI", sans-serif;
+    margin-bottom: 10px;
+}
+
+.form-group input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px; 
+}
+
+
+/* Custom CSS for the Order Details table */
+table.order-details {
+    width: 80%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      margin-left: 18%;
+    transform: translateY(40px);
+  }
+  
+  table.order-details th {
+    background-color: #f8cefd;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  table.order-details th.action-header {
+    text-align: center;
+  }
+  
+  table.order-details tr:nth-child(even) {
+    background-color: white;
+  }
+  
+  table.order-details tr:nth-child(odd) {
+    background-color: #f4f4f4;
+  }
+  
+  table.order-details td {
+    padding: 10px;
+    text-align: left;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    border: 1px solid #ccc;
+  }
+
+
+.total-amount label {
+    display: block;
+    font-size: 20px; 
+    font-weight: bold;
+    font-family: "Segoe UI", sans-serif;
+    margin-top: 10%;
+    margin-bottom: 10px;
+    margin-left: 45%;
+}
+
+.total-amount input[type="text"] {
+    width: 20%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px; 
+    margin-left: 45%;
+}
+
