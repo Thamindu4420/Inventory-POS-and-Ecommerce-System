@@ -1,0 +1,248 @@
+/* Styles for the dashboard background */
+body {
+    background-color: #fafafa; 
+  }
+  
+  /* Basic styles for the header and cart icon */
+  .header {
+      background-color: #F76707;
+      align-items: center;
+      justify-content: space-between;
+      padding: 65px;
+      margin-top: -10px;
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+
+
+/* Adding KUMARA STORES LOGO */
+.logo {
+    position: absolute;
+    top: 7%; 
+    left: 70px; 
+    transform: translateY(-50%); 
+  }
+  
+  .logo img {
+    width: 100px; 
+    height: 100px;
+  }
+
+
+/* Styles for the Search and Login Container */
+.search-login-container {
+    display: flex;
+    align-items: center; 
+    margin-left: 40%;
+}
+
+
+
+/* Styles for the Login Button */
+.logout-button {
+    background-color: #0CBEFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 90%;
+}
+
+
+/* Styles for the Menu Bar */
+.menu-bar {
+    max-width: 110%;
+    background-color: #069A55;
+    padding: 10px 0; 
+    padding-right: 10px;
+    margin-top: 1%;
+    margin-left: -8px;
+}
+
+/* Styles for the Menu List */
+.menu-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+/* Styles for the Menu Items */
+.menu-item {
+    margin-left: 50px;
+    margin-right: 60px; 
+    font-family: "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Styles for Hyperlinks */
+.menu-item a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s, background-color 0.3s; 
+    transition: transform 0.3s;  
+}
+
+/* Hover effect for Menu Items */
+.menu-item:hover a {
+    color: #c273ff; 
+    transform: scale(1.04);
+}
+
+
+/* Styles for the colored rectangle */
+.footer {
+    background-color: #069A55;
+    height: 230px; 
+    width: 100%; 
+    margin-top: 4%;
+}
+
+
+.footer-heading {
+    font-family: 'cooper', sans-serif;
+    font-size: 45px;
+    text-align:center;
+    margin-bottom: -20px;
+    color:#f4c0c0
+}
+  
+  .footer-address {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 25px;
+    margin-bottom: -40px;
+    text-align:center;
+    color:#8fa8f1
+  }
+
+
+/* Styles for the Contact and Follow Us Sections */
+.contact-section {
+    background-color: #069A55;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  }
+  
+  .contact h3,
+  .follow-us h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  .contact p {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.925);
+  }
+  
+  .follow-us img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+
+
+/* CHECKOUT FORM */
+
+  .checkout-form {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 130px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+
+.shipping-address-heading {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    margin-top: -5%;
+    margin-bottom: 6%;
+    text-align: center;
+   
+}
+
+/* Style for Form Rows */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* Style for Textboxes */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 46%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 1%;
+}
+
+/* Style for Checkout Button */
+.checkout-button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+/* Style for Checkout Button on Hover */
+.checkout-button:hover {
+    background-color: darkred;
+}
+
+
+/* Style for the Payment Method section */
+.form-row2 {
+  margin-top: 30px;
+}
+
+label[for="payment-method"] {
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.payment-method-options {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  
+}
+
+input[type="radio"] {
+  margin-right: 25px;
+}
+
+/* Style for the radio buttons */
+input[type="radio"] + label {
+  font-weight: normal;
+  cursor: pointer;
+}
+
+/* Highlight the selected radio button label */
+input[type="radio"]:checked + label {
+  font-weight: bold;
+}

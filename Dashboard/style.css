@@ -1,0 +1,752 @@
+/* Styles for the dashboard background */
+body {
+  background-color: #fafafa; 
+}
+
+/* Basic styles for the header and cart icon */
+.header {
+    background-color: #F9583E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 38px;
+    margin-top: -10px;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  
+  /* Style for the cart icon container */
+.cart-icon {
+  margin-left: 95%; 
+  margin-top: -20px;
+}
+
+/* Style for the cart icon image */
+.cart-icon img {
+  width: 30px; 
+  height: 40px;
+  cursor: pointer; 
+}
+  
+  /* Basic styles for the sidebar and menu items */
+  .sidebar {
+    background-color: #252525;
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: -8px;
+    min-height: 100vh;
+  }
+  
+  .menu {
+    list-style-type: none;
+    padding: -80px;
+    margin: -10px;
+    position: relative;
+  }
+  
+  .menu li {
+    margin-bottom: 40px;
+  }
+  
+  .menu a {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 25px;
+    color: #FEFEFE;
+    text-decoration: none;
+    margin-left: -5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu img {
+    width: 25px;
+    height: 20px;
+    margin-right: 20px;
+    filter: invert(100%);
+    margin-left: -30px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Styles for the submenus */
+  .sub-menu {
+    display: none;
+  }
+  
+  .submenu:hover .sub-menu {
+    display:list-item;
+  }
+
+  .submenu .sub-menu a {
+    font-size: 20px; 
+    margin-left: -10px;
+  }
+
+  .submenu li {
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 14px;
+    margin-bottom: -10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .submenu > li:hover {
+    background-color: orange;
+  }
+
+  .menu .icon img {
+    width: 20px;
+    height: 20px;;
+    margin-left: -60px;
+  }
+  
+  /* Add zoom-in animation on hover for menu items and images */
+  .menu li:hover,
+  .menu img:hover {
+  transform: scale(1.1); 
+}
+
+/* Add orange background on hover for menu items and images */
+.menu li a:hover,
+.menu img:hover {
+background-color: rgb(255, 119, 0);
+}
+
+/* Adding KUMARA STORES LOGO */
+.logo {
+  position: absolute;
+  top: 5%; 
+  left: 70px; 
+  transform: translateY(-50%); 
+}
+
+.logo img {
+  width: 90px; 
+  height: 75px;
+}
+
+  /* Styles for the dashboard texts */
+.texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .dashboard-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -1700px;
+  }
+  
+  .dashboard-title {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #746F6F;
+    margin-right: 1350px;
+    margin-top: 90px;
+  }
+  
+  .dashboard-subtitle {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 20px;
+    color: #746F6F;
+    margin-bottom: 80px;
+    margin-top: -40px;
+    margin-right: 40px;
+  }
+
+ /* Styles for the dropdown icon */
+.dropdown-icon {
+    font-size: 18px;
+    margin-left: 5px;
+    color: #FFFFFF;
+  }
+
+/* Styles for the TOTAL ITEM box */
+
+.total-items-box {
+    margin-top: -730px; 
+    margin-left: 350px;
+    margin-right: 1250px;
+    background-color: #5C58D8;
+    padding: 30px;
+    padding-bottom: 5px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    background-image:linear-gradient(rgba(52, 60, 69, 0.7), rgba(68, 36, 36, 0.7)), url('https://www.nicepng.com/png/full/204-2049036_download-3-cube-icon.png'); 
+    background-size:contain; 
+    background-repeat: no-repeat; 
+    background-position:right; 
+    transition: transform 0.3s ease;
+  }
+
+  .total-items-box:hover {
+    transform: scale(1.1); 
+  }
+  
+  /* Styles for the total items text */
+  .total-items-text {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+  
+  /* Styles for the more info strip */
+  .total-items-more-info .more-info-strip {
+    display: flex;
+    align-items: center;
+    background-color: #413DBB;
+    padding: -20px;
+    border-radius: 5px;
+    margin-bottom: -5px;
+    margin-left: -30px;
+    margin-right: -30px;
+    cursor: pointer;
+  }
+  
+  /* Styles for the more info text */
+  .total-items-more-info .more-info-text {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-right: 5px;
+    margin-left: 90px;
+    text-decoration: none;
+  }
+  
+  /* Styles for the more info icon */
+  .total-items-more-info .more-info-icon {
+  width: 15px; 
+  height: 15px; 
+  filter: invert(100%);
+  }
+
+ /* Styles for the "Total Category" box */
+.total-category-box {
+  margin-top: -162px; 
+  margin-left: 750px;
+  margin-right: -100px;
+  background-color: #1AD9D9; 
+  padding: 40px;
+  padding-right: 80px;
+  border-radius: 8px;
+  color: #FFFFFF;
+  width: 150px; 
+  background-image:linear-gradient(rgba(52, 60, 69, 0.7), rgba(68, 36, 36, 0.7)), url('https://www.nicepng.com/png/full/204-2049036_download-3-cube-icon.png'); 
+  background-size:contain; 
+  background-repeat: no-repeat; 
+  background-position:right; 
+  transition: transform 0.3s ease;
+}
+
+/* Hover style: Zoom in the box on hover */
+.total-category-box:hover {
+  transform: scale(1.1); 
+}
+
+/* Styles for the total category text */
+.total-category-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left; 
+  margin-left: -30px;
+  margin-top: -15px; 
+}
+
+/* Styles for the more info strip */
+.total-category-more-info .more-info-strip {
+  display: flex;
+  align-items: center;
+  background-color: #1BB8B8; 
+  padding: 14px;
+  padding-bottom: 18px; 
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 33px;
+  margin-bottom: -40px;
+  margin-left: -40px;
+  margin-right: -80px;
+}
+
+/* Styles for the more info text */
+.total-category-more-info .more-info-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin: 0px;
+  margin-left: 65px;
+}
+
+/* Styles for the more info icon */
+.total-category-more-info .more-info-icon {
+  width: 15px; 
+  height: 15px; 
+  filter: invert(100%);
+  margin-left: 8px;
+}
+
+/* Styles for the "Total Elements" box */
+.total-elements-box {
+  margin-top: -164px; 
+  margin-left: 1125px;
+  background-color: #FEBA00; 
+  padding: 20px;
+  padding-right: 85px;
+  padding-bottom: -800px;
+  border-radius: 8px;
+  color: #FFFFFF;
+  width: 150px; 
+  background-image:linear-gradient(rgba(36, 44, 54, 0.7), rgba(48, 32, 32, 0.7)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5afpx3wsQgzXLHss8vgGV55nP5_B6fdhK6w&usqp=CAU'); 
+  background-size:contain; 
+  background-repeat: no-repeat; 
+  background-position:right; 
+  transition: transform 0.3s ease;
+}
+
+/* Hover style: Zoom in the box on hover */
+.total-elements-box:hover {
+  transform: scale(1.1); 
+}
+
+/* Styles for the total elements text */
+.total-elements-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left; 
+  margin: 0; 
+  margin-left: -10px;
+}
+
+/* Styles for the "More Info" strip of the Total Elements box */
+.total-elements-more-info .more-info-strip {
+  display: flex;
+  align-items: center;
+  background-color: #E2A600; 
+  padding: 18px; 
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 37px;
+  margin-bottom: -20px;
+  margin-left: -20px;
+  margin-right: -85px;
+}
+
+/* Styles for the "More Info" text of the Total Elements box */
+.total-elements-more-info .more-info-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin: 0; 
+  margin-left: 60px;
+}
+
+/* Styles for the "More Info" icon of the Total Elements box */
+.total-elements-more-info .more-info-icon {
+  width: 15px; 
+  height: 15px; 
+  filter: invert(100%);
+  margin-left: 5px;
+}
+
+/* Styles for the "Total Sales" box */
+.total-sales-box {
+  margin-top: 40px; 
+  background-color: #3DB935; 
+  padding: 50px;
+  padding-bottom: 60px;
+  padding-right: -50px;
+  border-radius: 8px;
+  color: #FFFFFF;
+  width: 150px; 
+  margin-top: -165px;
+  margin-left: 1500px;
+  background-image:linear-gradient(rgba(36, 44, 54, 0.7), rgba(48, 32, 32, 0.7)), url('https://cdn3.iconfinder.com/data/icons/pyconic-icons-3-1/512/dollar-512.png'); 
+  background-size:contain; 
+  background-repeat: no-repeat; 
+  background-position:right; 
+  transition: transform 0.3s ease;
+}
+
+/* Hover style: Zoom in the box on hover */
+.total-sales-box:hover {
+  transform: scale(1.1); 
+}
+
+/* Styles for the total sales text */
+.total-sales-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left; 
+  margin: 0; 
+  margin-top: -30px;
+  margin-left: -40px;
+}
+
+/* Styles for the "More Info" strip of the Total Sales box */
+.total-sales-more-info .more-info-strip {
+  display: flex;
+  align-items: center;
+  background-color: #088C03; 
+  padding: 18px; 
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 35px;
+  margin-bottom: -75px;
+  margin-left: -50px;
+  margin-right: -50px;
+}
+
+/* Styles for the "More Info" text of the Total Sales box */
+.total-sales-more-info .more-info-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin: 0; 
+  margin-left: 65px;
+}
+
+/* Styles for the "More Info" icon of the Total Sales box */
+.total-sales-more-info .more-info-icon {
+  width: 15px; 
+  height: 15px; 
+  filter: invert(100%);
+  margin-left: 10px;
+}
+
+/* Styles for the "Total Products" box */
+.total-products-box {
+  margin-top: 70px; 
+  margin-left: 350px;
+  background-color: #0F4998; 
+  padding: 20px;
+  padding-right: 113px;
+  padding-bottom: 65px;
+  border-radius: 8px;
+  color: #FFFFFF;
+  width: 150px; 
+  background-image:linear-gradient(rgba(38, 74, 109, 0.7), rgba(89, 69, 69, 0.7)), url('https://www.svgrepo.com/show/57782/closed-box.svg'); 
+  background-size:contain; 
+  background-repeat: no-repeat; 
+  background-position:right; 
+  transition: transform 0.3s ease;
+}
+
+/* Hover style: Zoom in the box on hover */
+.total-products-box:hover {
+  transform: scale(1.1); 
+}
+
+/* Styles for the total products text */
+.total-products-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left; 
+  margin: 0; 
+  margin-left: -10px;
+}
+
+/* Styles for the "More Info" strip of the Total Products box */
+.total-products-more-info .more-info-strip {
+  display: flex;
+  align-items: center;
+  background-color: #1D57A6; 
+  padding: 18px; 
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: -20px;
+  margin-right: -113px;
+  margin-bottom: -70px;
+}
+
+/* Styles for the "More Info" text of the Total Products box */
+.total-products-more-info .more-info-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin: 0; 
+  margin-left: 70px;
+}
+
+/* Styles for the "More Info" icon of the Total Products box */
+.total-products-more-info .more-info-icon {
+  width: 15px; 
+  height: 15px; 
+  filter: invert(100%);
+  margin-left: 8px;
+}
+
+/* Styles for the "Paid Orders" box */
+.paid-orders-box {
+  margin-top: -155px; 
+  margin-left: 750px;
+  background-color: #0A962F; 
+  padding: 20px;
+  padding-right: 103px;
+  padding-bottom: 55px;
+  border-radius: 8px;
+  color: #FFFFFF;
+  width: 150px; 
+  background-image:linear-gradient(rgba(37, 90, 35, 0.7),rgba(65, 123, 95, 0.7)), url('https://cdn3.iconfinder.com/data/icons/pyconic-icons-3-1/512/dollar-512.png'); 
+  background-size:contain; 
+  background-repeat: no-repeat; 
+  background-position:right;
+  transition: transform 0.3s ease; 
+}
+
+/* Hover style: Zoom in the box on hover */
+.paid-orders-box:hover {
+  transform: scale(1.1); 
+}
+
+/* Styles for the paid orders text */
+.paid-orders-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left; 
+  margin: 0; 
+  margin-left: -10px;
+}
+
+/* Styles for the "More Info" strip of the Paid Orders box */
+.paid-orders-more-info .more-info-strip {
+  display: flex;
+  align-items: center;
+  background-color: #027921; 
+  padding: 18px; 
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: -55px;
+  margin-left: -20px;
+  margin-right: -103px;
+}
+
+/* Styles for the "More Info" text of the Paid Orders box */
+.paid-orders-more-info .more-info-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin: 0; 
+  margin-left: 65px;
+}
+
+/* Styles for the "More Info" icon of the Paid Orders box */
+.paid-orders-more-info .more-info-icon {
+  width: 15px; 
+  height: 15px; 
+  filter: invert(100%);
+  margin-left: 8px;
+}
+
+/* Styles for the "Unpaid Orders" box */
+.unpaid-orders-box {
+  margin-top: -160px; 
+  margin-left: 1125px;
+  background-color: #EA3667; 
+  padding: 20px;
+  padding-bottom: 80px;
+  padding-right: 85px;
+  border-radius: 8px;
+  color: #FFFFFF;
+  width: 150px; 
+  background-image:linear-gradient(rgba(196, 74, 168, 0.7), rgba(62, 7, 59, 0.7)), url('https://cdn3.iconfinder.com/data/icons/pyconic-icons-3-1/512/dollar-512.png'); 
+  background-size:contain; 
+  background-repeat: no-repeat; 
+  background-position:right; 
+  transition: transform 0.3s ease;
+}
+
+/* Hover style: Zoom in the box on hover */
+.unpaid-orders-box:hover {
+  transform: scale(1.1); 
+}
+
+/* Styles for the unpaid orders text */
+.unpaid-orders-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left; 
+  margin: 0; 
+  margin-left: -10px;
+}
+
+/* Styles for the "More Info" strip of the Unpaid Orders box */
+.unpaid-orders-more-info .more-info-strip {
+  display: flex;
+  align-items: center;
+  background-color: #C72B55; 
+  padding: 18px; 
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: -80px;
+  margin-left: -20px;
+  margin-right: -85px;
+}
+
+/* Styles for the "More Info" text of the Unpaid Orders box */
+.unpaid-orders-more-info .more-info-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin: 0; 
+  margin-left: 60px;
+}
+
+
+/* Styles for the "More Info" icon of the Unpaid Orders box */
+.unpaid-orders-more-info .more-info-icon {
+  width: 15px; 
+  height: 15px; 
+  filter: invert(100%);
+  margin-left: 8px;
+}
+
+/* Styles for the "Total Members" box */
+.total-members-box {
+  margin-top: -160px; 
+  margin-left: 1500px;
+  background-color: #00AEEE; 
+  padding: 20px;
+  padding-right: 80px;
+  padding-bottom: 90px;
+  border-radius: 8px;
+  color: #FFFFFF;
+  width: 150px; 
+  background-image:linear-gradient(rgba(69, 158, 167, 0.7), rgba(25, 73, 72, 0.7)), url('https://cdn-icons-png.flaticon.com/512/2118/2118701.png'); 
+  background-size:contain; 
+  background-repeat: no-repeat; 
+  background-position:right;
+  transition: transform 0.3s ease; 
+}
+
+/* Hover style: Zoom in the box on hover */
+.total-members-box:hover {
+  transform: scale(1.1); 
+}
+
+/* Styles for the total members text */
+.total-members-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left; 
+  margin: 0; 
+  margin-left: -10px;
+}
+
+/* Styles for the "More Info" strip of the Total Members box */
+.total-members-more-info .more-info-strip {
+  display: flex;
+  align-items: center;
+  background-color: #0D93C4; 
+  padding: 18px; 
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: -90px;
+  margin-left: -20px;
+  margin-right: -80px;
+}
+
+/* Styles for the "More Info" text of the Total Members box */
+.total-members-more-info .more-info-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin: 0; 
+  margin-left: 60px;
+}
+
+/* Styles for the "More Info" icon of the Total Members box */
+.total-members-more-info .more-info-icon {
+  width: 15px; 
+  height: 15px; 
+  filter: invert(100%);
+  margin-left: 8px;
+}
+
+/* Styles for the "Total Warehouse" box */
+.total-warehouse-box {
+  margin-top: 60px; 
+  margin-left: 350px;
+  background-color: #DB3338; 
+  padding: 20px;
+  padding-bottom: 65px;
+  padding-right: 110px;
+  border-radius: 8px;
+  color: #FFFFFF;
+  width: 150px; 
+  background-image:linear-gradient(rgba(99, 41, 31, 0.7), rgba(129, 50, 96, 0.7)), url('https://www.iconpacks.net/icons/1/free-warehouse-icon-1073-thumb.png'); 
+  background-size:contain; 
+  background-repeat: no-repeat; 
+  background-position:right;
+  transition: transform 0.3s ease;
+}
+
+/* Hover style: Zoom in the box on hover */
+.total-warehouse-box:hover {
+  transform: scale(1.1); 
+}
+
+/* Styles for the total warehouse text */
+.total-warehouse-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left; 
+  margin: 0; 
+  margin-left: -10px;
+}
+
+/* Styles for the "More Info" strip of the Total Warehouse box */
+.total-warehouse-more-info .more-info-strip {
+  display: flex;
+  align-items: center;
+  background-color: #AF060B; 
+  padding: 15px; 
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-bottom: -70px;
+  margin-left: -20px;
+  margin-right: -110px;
+}
+
+/* Styles for the "More Info" text of the Total Warehouse box */
+.total-warehouse-more-info .more-info-text {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin: 0; 
+  margin-left: 80px;
+}
+
+/* Styles for the "More Info" icon of the Total Warehouse box */
+.total-warehouse-more-info .more-info-icon {
+  width: 15px; 
+  height: 15px; 
+  filter: invert(100%);
+  margin-left: 8px;
+}
+

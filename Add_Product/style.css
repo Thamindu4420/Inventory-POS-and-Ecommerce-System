@@ -1,0 +1,472 @@
+/* Styles for the Add Product background */
+body {
+    background-color: #fffdfd; 
+  }
+  
+  /* Basic styles for the header */
+  .header {
+      background-color: #F9583E;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px;
+      margin-top: -10px;
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+  
+  /* Basic styles for the sidebar and menu items */
+  .sidebar {
+  background-color: #252525;
+  width: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: -8px;
+  min-height: 200vh;
+  transform: translateY(98px); 
+  position:absolute;
+  top: 0; 
+  left: 0; 
+  bottom: 0; 
+  overflow-y: auto;
+  }
+  
+  .menu {
+  list-style-type: none;
+  padding: -80px;
+  margin: -10px;
+  position: relative;
+  }
+  
+  .menu li {
+  margin-bottom: 40px;
+  }
+  
+  .menu a {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 25px;
+  color: #FEFEFE;
+  text-decoration: none;
+  margin-left: -5px;
+  transition: background-color 0.3s ease;
+  }
+  
+  .menu img {
+  width: 25px;
+  height: 20px;
+  margin-right: 20px;
+  filter: invert(100%);
+  margin-left: -30px;
+  transition: transform 0.3s ease;
+  }
+  
+  /* Styles for the submenus */
+  .sub-menu {
+  display: none;
+  }
+  
+  .submenu:hover .sub-menu {
+  display:list-item;
+  }
+  
+  .submenu .sub-menu a {
+  font-size: 20px; 
+  margin-left: -10px;
+  }
+  
+  .submenu li {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 14px;
+  margin-bottom: -10px;
+  transition: background-color 0.3s ease;
+  }
+  
+  .submenu > li:hover {
+  background-color: orange;
+  }
+  
+  .menu .icon img {
+  width: 20px;
+  height: 20px;;
+  margin-left: -60px;
+  }
+  
+  /* Add zoom-in animation on hover for menu items and images */
+  .menu li:hover,
+  .menu img:hover {
+  transform: scale(1.1); 
+  }
+  
+  /* Add orange background on hover for menu items and images */
+  .menu li a:hover,
+  .menu img:hover {
+  background-color: rgb(255, 119, 0);
+  }
+  
+  /* Adding KUMARA STORES LOGO */
+  .logo {
+  position: absolute;
+  top: 5%; 
+  left: 70px; 
+  transform: translateY(-50%); 
+  }
+  
+  .logo img {
+  width: 90px; 
+  height: 75px;
+  }
+
+    /* Styles for the dashboard texts */
+   .content {
+        margin-left: 300px;
+        padding: 20px;
+        }
+        
+        .texts {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end; 
+        margin-bottom: 20px; 
+        }
+        
+        .add-new-product-text {
+        font-family: "Segoe UI", sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        color: #5A5A5A;
+        margin-right: 1150px; 
+        white-space: nowrap;
+        }
+        
+        .breadcrumb-text {
+        font-family: "Segoe UI", sans-serif;
+        font-size: 20px;
+        font-weight: regular;
+        color: #5A5A5A;
+        margin-right: 40px;
+        white-space: nowrap;
+        }
+        
+        /* Styles for the dropdown icon */
+      .dropdown-icon {
+          font-size: 18px;
+          margin-left: 5px;
+          color: #FFFFFF;
+        }
+
+/* Style for the image section */
+.image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -1200px;
+  }
+  
+  /* Style for the "Image" label */
+  .image-label {
+    font-family: "Calibri", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: -280px;
+  }
+  
+  /* Style for the image preview container */
+  .image-preview {
+    position: relative;
+    font-family: "Calibri", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: -200px;
+  }
+  
+  /* Style for the image circle and hidden file input */
+  .image-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #cecdcd;
+    cursor: pointer;
+  }
+  
+  /* Style for the image inside the circle */
+  .image-circle img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  /* Style for the price label */
+  .product-name-label {
+    font-family: "Calibri", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 1%;
+
+  }
+  
+  /* Style for the price input */
+  .product-name-input {
+    width: calc(100% - -343%);;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 1%;
+    margin-bottom: 20px;
+  }
+  
+  
+
+  /* Style for the price label */
+  .price-label {
+    font-family: "Calibri", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: -15%;
+
+  }
+  
+  /* Style for the price input */
+  .price-input {
+    width: calc(100% - -482%);;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: -15%;
+    margin-bottom: 20px;
+  }
+
+  /* Style for the Quantity label */
+  .quantity-label {
+    font-family: "Calibri", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: -8%;
+
+  }
+  
+  /* Style for the quantity input */
+  .quantity-input {
+    width: calc(100% - -418%);;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: -8%;
+    margin-bottom: 20px;
+  }
+
+  /* Style for the Description label */
+  .description-label {
+    font-family: "Calibri", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: -4%;
+  }
+  
+  /* Style for the Description input */
+  .description-input {
+    width: calc(100% - -382%);;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: -4%;
+    margin-bottom: 10px;
+  }
+
+/* Styles for the "Element" label */
+ .element-label {
+  font-family: "Calibri", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px; 
+  margin-left: -120%;
+}
+
+/* Styles for the dropdown */
+.element-dropdown {
+  width: calc(100% - -1460%);;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px; 
+  margin-left: -120%;
+  margin-bottom: 10px;
+}
+
+/* Style the dropdown options */
+.element-dropdown option {
+  font-size: 16px;
+  padding: 5px; 
+}
+
+/* Styles for the "Category" label */
+.category-label {
+  font-family: "Calibri", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px; 
+  margin-left: -123%;
+}
+
+
+/* Styles for the dropdown */
+.category-dropdown {
+  width: calc(100% - -1480%);
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px; 
+  margin-left: -123%;
+  margin-bottom: 10px;
+}
+
+/* Style the dropdown options */
+.category-dropdown option {
+  font-size: 16px;
+  padding: 5px; 
+}
+
+  
+
+    /* Styles for the "Warehouse" label */
+ .warehouse-label {
+  font-family: "Calibri", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px; 
+  margin-left: -78%;
+}
+
+/* Styles for the dropdown */
+.warehouse-dropdown {
+  width: calc(100% - -1065%);;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px; 
+  margin-left: -78%;
+  margin-bottom: 10px;
+}
+
+/* Style the dropdown options */
+.warehouse-dropdown option {
+  font-size: 16px;
+  padding: 5px; 
+}
+  
+  /* Styles for the "Availability" label */
+ .availability-label {
+    font-family: "Calibri", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px; 
+    margin-left: -120%;
+  }
+  
+  /* Styles for the dropdown */
+  .availability-dropdown {
+    width: calc(100% - -1480%);;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px; 
+    margin-left: -120%;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the dropdown options */
+  .availability-dropdown option {
+    font-size: 16px;
+    padding: 5px; 
+  }
+
+
+/* Style for the horizontal line after the heading */
+.heading-line {
+    border: 1px solid #000000; 
+    margin-top: 10px; 
+  }
+
+
+/* Styles for the button container */
+.button-container {
+    text-align: center; 
+    margin-top: 70px; 
+    margin-left: 40%;
+  }
+  
+  /* Styles for the "Save" button */
+  .save-button {
+    background-color: #4B9FCF;
+    color: #fff;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-right: 10px; 
+  }
+  
+  /* Styles for the "Back" button */
+  .back-button {
+    background-color: red;
+    color: #fff;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-left: 40px;
+  }
+  
+  /* Hover effect for buttons (optional) */
+  .save-button:hover,
+  .back-button:hover {
+    opacity: 0.8;
+  }
+  
+  #toast-message {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    border-radius: 5px;
+    z-index: 1;
+    transition: opacity 0.5s;
+}
+
+.hidden {
+    display: none;
+}

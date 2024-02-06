@@ -1,0 +1,367 @@
+/* Styles for the dashboard background */
+body {
+    background-color: #fafafa; 
+  }
+  
+  /* Basic styles for the header and cart icon */
+  .header {
+      background-color: #069A55;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px;
+      margin-top: -10px;
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+    
+    .inventory-icon img{
+      margin-left: 900px;
+      width: 50px; 
+      height: 50px;
+      position: absolute;
+      top: 5%;
+      transform: translateY(-50%);
+      filter: invert(100%);
+    }
+    
+    /* Basic styles for the sidebar and menu items */
+    .sidebar {
+      background-color: #252525;
+      width: 300px;
+      padding: 20px;
+      box-sizing: border-box;
+      margin-left: -8px;
+      margin-top: -5.3%;
+      min-height: 100vh;
+    }
+    
+    .menu {
+      list-style-type: none;
+      padding: -80px;
+      margin: -10px;
+      position: relative;
+    }
+    
+    .menu li {
+      margin-bottom: 40px;
+    }
+    
+    .menu a {
+      font-family: "Segoe UI", sans-serif;
+      font-size: 25px;
+      color: #FEFEFE;
+      text-decoration: none;
+      margin-left: -5px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .menu img {
+      width: 25px;
+      height: 20px;
+      margin-right: 20px;
+      filter: invert(100%);
+      margin-left: -30px;
+      transition: transform 0.3s ease;
+    }
+  
+    .menu .icon img {
+      width: 20px;
+      height: 20px;;
+      margin-left: -60px;
+    }
+    
+    /* Add zoom-in animation on hover for menu items and images */
+    .menu li:hover,
+    .menu img:hover {
+    transform: scale(1.1); 
+  }
+  
+  /* Add orange background on hover for menu items and images */
+  .menu li a:hover,
+  .menu img:hover {
+  background-color: rgb(34, 54, 186);
+  }
+  
+  /* Adding KUMARA STORES LOGO */
+  .logo {
+    position: absolute;
+    top: 5%; 
+    left: 70px; 
+    transform: translateY(-50%); 
+  }
+  
+  .logo img {
+    width: 90px; /* Adjust the logo size as needed */
+    height: 75px;
+  }
+  
+    /* Styles for the dashboard texts */
+.texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  
+  .dashboard-subtitle {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 20px;
+    color: #746F6F;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    margin-right: 40px;
+  }
+
+  .admin-panel-text {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+  }
+
+  /* Style for the horizontal line after the heading */
+.heading-line {
+    border: 1px solid #000000; 
+    margin-top: -50px; 
+  }
+  
+
+  /* Styles for the TOTAL Users box */
+
+.total-users-box {
+    margin-top: -730px; 
+    margin-left: 350px;
+    margin-right: 1250px;
+    background-color: #d6fc00;
+    padding: 30px;
+    padding-bottom: 50px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    background-image:linear-gradient(rgba(52, 60, 69, 0.7), rgba(68, 36, 36, 0.7)), url('https://cdn-icons-png.flaticon.com/512/1769/1769039.png'); 
+    background-size:contain; 
+    background-repeat: no-repeat; 
+    background-position:right; 
+    transition: transform 0.3s ease;
+  }
+
+  .total-users-box:hover {
+    transform: scale(1.1); 
+  }
+  
+  .total-users-text {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+
+
+  /* Styles for the "Total Orders" box */
+.total-orders-box {
+    margin-top: -162px; 
+    margin-left: 750px;
+    margin-right: -100px;
+    background-color: #bc03ff; 
+    padding: 40px;
+    padding-right: 80px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    width: 150px; 
+    background-image:linear-gradient(rgba(52, 60, 69, 0.7), rgba(68, 36, 36, 0.7)), url('https://cdn-icons-png.flaticon.com/512/1170/1170627.png'); 
+    background-size:contain; 
+    background-repeat: no-repeat; 
+    background-position:right; 
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover style: Zoom in the box on hover */
+  .total-orders-box:hover {
+    transform: scale(1.1); 
+  }
+  
+  /* Styles for the total order text */
+  .total-orders-text {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left; 
+    margin-left: -30px;
+    margin-top: -15px; 
+  }
+
+
+/* Styles for the "Total categories" box */
+.total-category-box {
+    margin-top: -169px; 
+    margin-left: 1125px;
+    background-color: #fe0000; 
+    padding: 20px;
+    padding-right: 85px;
+    padding-bottom: 75px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    width: 150px; 
+    background-image:linear-gradient(rgba(36, 44, 54, 0.7), rgba(48, 32, 32, 0.7)), url('https://www.nicepng.com/png/full/204-2049036_download-3-cube-icon.png'); 
+    background-size:contain; 
+    background-repeat: no-repeat; 
+    background-position:right; 
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover style: Zoom in the box on hover */
+  .total-category-box:hover {
+    transform: scale(1.1); 
+  }
+  
+  /* Styles for the total categories text */
+  .total-category-text {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left; 
+    margin: 0; 
+    margin-left: -10px;
+  }
+  
+
+
+/* Styles for the "Total Products" box */
+.total-products-box {
+    margin-top: 48px; 
+    background-color: #11ff00; 
+    padding: 50px;
+    padding-bottom: 70px;
+    padding-right: -50px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    width: 150px; 
+    margin-top: -165px;
+    margin-left: 1500px;
+    background-image:linear-gradient(rgba(36, 44, 54, 0.7), rgba(48, 32, 32, 0.7)), url('https://static.vecteezy.com/system/resources/previews/017/059/478/original/barcode-icon-free-png.png'); 
+    background-size:contain; 
+    background-repeat: no-repeat; 
+    background-position:right; 
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover style: Zoom in the box on hover */
+  .total-products-box:hover {
+    transform: scale(1.1); 
+  }
+  
+  /* Styles for the total products text */
+  .total-products-text {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left; 
+    margin: 0; 
+    margin-top: -30px;
+    margin-left: -40px;
+  }
+
+
+/* Styles for the "Total Customers" box */
+.total-customers-box {
+    margin-top: 70px; 
+    margin-left: 350px;
+    background-color: #04cbfd; 
+    padding: 20px;
+    padding-right: 113px;
+    padding-bottom: 65px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    width: 150px; 
+    background-image:linear-gradient(rgba(38, 74, 109, 0.7), rgba(89, 69, 69, 0.7)), url('https://cdn-icons-png.flaticon.com/512/1769/1769039.png'); 
+    background-size:contain; 
+    background-repeat: no-repeat; 
+    background-position:right; 
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover style: Zoom in the box on hover */
+  .total-customers-box:hover {
+    transform: scale(1.1); 
+  }
+  
+  /* Styles for the total customers text */
+  .total-customers-text {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left; 
+    margin: 0; 
+    margin-left: -10px;
+  }
+  
+
+/* Styles for the "Total Items" box */
+.total-items-box {
+    margin-top: -158px; 
+    margin-left: 750px;
+    background-color: #ff00ff; 
+    padding: 20px;
+    padding-right: 103px;
+    padding-bottom: 67px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    width: 150px; 
+    background-image:linear-gradient(rgba(38, 74, 109, 0.7), rgba(89, 69, 69, 0.7)), url('https://www.svgrepo.com/show/57782/closed-box.svg'); 
+    background-size:contain; 
+    background-repeat: no-repeat; 
+    background-position:right;
+    transition: transform 0.3s ease; 
+  }
+  
+  /* Hover style: Zoom in the box on hover */
+  .total-items-box:hover {
+    transform: scale(1.1); 
+  }
+  
+  /* Styles for the total items text */
+  .total-items-text {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left; 
+    margin: 0; 
+    margin-left: -10px;
+  }
+  
+
+/* Styles for the "Total Income" box */
+.total-income-box {
+    margin-top: -160px; 
+    margin-left: 1125px;
+    background-color: #e1ff00; 
+    padding: 20px;
+    padding-bottom: 66px;
+    padding-right: 85px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    width: 150px; 
+    background-image:linear-gradient(rgba(38, 74, 109, 0.7), rgba(89, 69, 69, 0.7)), url('https://cdn3.iconfinder.com/data/icons/pyconic-icons-3-1/512/dollar-512.png'); 
+    background-size:contain; 
+    background-repeat: no-repeat; 
+    background-position:right; 
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover style: Zoom in the box on hover */
+  .total-income-box:hover {
+    transform: scale(1.1); 
+  }
+  
+  /* Styles for the total-income text */
+  .total-income-text {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left; 
+    margin: 0; 
+    margin-left: -10px;
+  }
+  
+  

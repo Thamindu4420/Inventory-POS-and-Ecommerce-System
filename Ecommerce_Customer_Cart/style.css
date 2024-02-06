@@ -1,0 +1,279 @@
+/* Styles for the dashboard background */
+body {
+    background-color: #fafafa; 
+  }
+  
+  /* Basic styles for the header and cart icon */
+  .header {
+      background-color: #F76707;
+      align-items: center;
+      justify-content: space-between;
+      padding: 65px;
+      margin-top: -10px;
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+
+
+/* Adding KUMARA STORES LOGO */
+.logo {
+    position: absolute;
+    top: 7%; 
+    left: 70px; 
+    transform: translateY(-50%); 
+  }
+  
+  .logo img {
+    width: 100px; 
+    height: 100px;
+  }
+
+
+/* Styles for the Search and Login Container */
+.search-login-container {
+    display: flex;
+    align-items: center; 
+    margin-left: 40%;
+}
+
+
+
+/* Styles for the Login Button */
+.logout-button {
+    background-color: #0CBEFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 90%;
+}
+
+
+/* Styles for the Menu Bar */
+.menu-bar {
+    max-width: 110%;
+    background-color: #069A55;
+    padding: 10px 0; 
+    padding-right: 10px;
+    margin-top: 1%;
+    margin-left: -8px;
+}
+
+/* Styles for the Menu List */
+.menu-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+/* Styles for the Menu Items */
+.menu-item {
+    margin-left: 50px;
+    margin-right: 60px; 
+    font-family: "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Styles for Hyperlinks */
+.menu-item a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s, background-color 0.3s; 
+    transition: transform 0.3s;  
+}
+
+/* Hover effect for Menu Items */
+.menu-item:hover a {
+    color: #c273ff; 
+    transform: scale(1.04);
+}
+
+
+/* Styles for the colored rectangle */
+.footer {
+    background-color: #069A55;
+    height: 230px; 
+    width: 100%; 
+    margin-top: 4%;
+}
+
+
+.footer-heading {
+    font-family: 'cooper', sans-serif;
+    font-size: 45px;
+    text-align:center;
+    margin-bottom: -20px;
+    color:#f4c0c0
+}
+  
+  .footer-address {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 25px;
+    margin-bottom: -40px;
+    text-align:center;
+    color:#8fa8f1
+  }
+
+
+/* Styles for the Contact and Follow Us Sections */
+.contact-section {
+    background-color: #069A55;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  }
+  
+  .contact h3,
+  .follow-us h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  .contact p {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.925);
+  }
+  
+  .follow-us img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+
+
+
+
+/* Style for Your Cart Heading */
+.cart-heading {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 35px;
+  color: black;
+  margin: 20px 0;
+  margin-bottom: 3%;
+  margin-left: 2%;
+  margin-top: 3%;
+}
+
+
+
+/* Style for Cart Table */
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-table th{
+  background-color: #85fffb;
+  border: 2px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 20px;
+}
+
+.cart-table td {
+  border: 2px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Times New Roman', sans-serif;
+}
+
+/* Style for Remove Button */
+.remove-button {
+  background-color: red;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.remove-button img {
+  width: 25px;
+  height: 25px;
+}
+
+/* Style for Sub-Total */
+.sub-total {
+  font-weight: bold;
+  margin-top: 10%;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 30px;
+}
+
+/* Style for Sub-Total Value (Rs. 300) */
+.sub-total-value {
+  color: red;
+}
+
+
+/* Style for Cart Buttons */
+.cart-buttons {
+  margin-top: 5%;
+  margin-bottom: 7%;
+  
+}
+
+.continue-shopping {
+  background-color: #F0861D;
+  color: white;
+  padding: 20px 25px;
+  border: none;
+  cursor: pointer;
+  margin-left: 33%;
+  margin-right: 8%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.continue-shopping img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.checkout {
+  background-color: #F0861D;
+  color: black;
+  padding: 20px 30px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+/* Style for the refresh button */
+.refresh-button {
+  background-color: rgb(170, 170, 170);
+  border:#8fa8f1;
+  padding: 5px 15px; 
+  border-radius: 5px;  
+  cursor: pointer;
+  color: rgb(255, 255, 255); 
+  font-weight: bold; 
+  font-family: 'Segoe UI', sans-serif;
+  margin-bottom: 2%;
+  margin-left: 90%;
+}
+
+/* Style for the refresh button on hover */
+.refresh-button:hover {
+  background-color: #c300ff; 
+}
+
+
+
+
+

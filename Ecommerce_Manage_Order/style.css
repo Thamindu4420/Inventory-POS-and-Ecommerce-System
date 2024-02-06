@@ -1,0 +1,227 @@
+/* Styles for the dashboard background */
+body {
+    background-color: #fafafa; 
+  }
+  
+  /* Basic styles for the header and cart icon */
+  .header {
+      background-color: #069A55;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px;
+      margin-top: -10px;
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+    
+    
+    /* Basic styles for the sidebar and menu items */
+  .sidebar {
+    background-color: #252525;
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: -8px;
+    min-height: 400vh;
+    transform: translateY(110px); 
+    position:absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    overflow-y: auto;
+    }
+    
+    .menu {
+    list-style-type: none;
+    padding: -80px;
+    margin: -10px;
+    position: relative;
+    }
+    
+    .menu li {
+    margin-bottom: 40px;
+    }
+    
+    .menu a {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 25px;
+    color: #FEFEFE;
+    text-decoration: none;
+    margin-left: -5px;
+    transition: background-color 0.3s ease;
+    }
+    
+    .menu img {
+    width: 25px;
+    height: 20px;
+    margin-right: 20px;
+    filter: invert(100%);
+    margin-left: -30px;
+    transition: transform 0.3s ease;
+    }
+    
+    .menu .icon img {
+    width: 20px;
+    height: 20px;;
+    margin-left: -60px;
+    }
+    
+    /* Add zoom-in animation on hover for menu items and images */
+    .menu li:hover,
+    .menu img:hover {
+    transform: scale(1.1); 
+    }
+    
+    /* Add orange background on hover for menu items and images */
+    .menu li a:hover,
+    .menu img:hover {
+    background-color: rgb(44, 16, 227);
+    }
+  
+  /* Adding KUMARA STORES LOGO */
+  .logo {
+    position: absolute;
+    top: 5%; 
+    left: 70px; 
+    transform: translateY(-50%); 
+  }
+  
+  .logo img {
+    width: 90px; /* Adjust the logo size as needed */
+    height: 75px;
+  }
+  
+
+
+
+/* Styles for the dashboard texts */
+.content {
+    margin-left: 300px;
+    padding: 20px;
+    }
+    
+    .texts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end; 
+    margin-top: 30px;
+    margin-bottom: 20px; 
+    }
+    
+    .manage-order-text {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #5A5A5A;
+    margin-right: 1100px; 
+    white-space: nowrap;
+    }
+    
+    .breadcrumb-text {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-weight: regular;
+    color: #5A5A5A;
+    margin-right: 40px;
+    white-space: nowrap;
+    }
+
+
+  .admin-panel-text {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+  }
+
+
+
+  /* Style for the horizontal line after the heading */
+.heading-line {
+    border: 1px solid #000000; 
+    margin-top: 10px; 
+  }
+
+  
+  /* Styles for the Search text box */
+  .search-box {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  margin-left: 1550px;
+  }
+  
+  .search-box input[type="text"] {
+  padding: 8px;
+  padding-right: 80px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 14px;
+  color: #5A5A5A;
+  width: 200px;
+  }
+
+
+/* Custom CSS for the Customer Orders table */
+table.customer-orders {
+    width: 80%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      margin-left: 18%;
+    transform: translateY(40px);
+  }
+  
+  table.customer-orders th {
+    background-color: #f8cefd;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  table.customer-orders th.action-header {
+    text-align: center;
+  }
+  
+  table.customer-orders tr:nth-child(even) {
+    background-color: white;
+  }
+  
+  table.customer-orders tr:nth-child(odd) {
+    background-color: #f4f4f4;
+  }
+  
+  table.customer-orders td {
+    padding: 10px;
+    text-align: left;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    border: 1px solid #ccc;
+  }
+
+  /* Styles for the View Button */
+.view-button {
+  background-color: #53C7D4;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 20%;
+}
+
+.view-button:hover {
+  background-color: #3BA9B8; 
+}
+
+
+  
